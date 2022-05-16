@@ -25,7 +25,7 @@ const Test = styled.div``;
 const Home = () => {
   const { loading, error, data } = useQuery<ExampleQueryDatas>(exampleQuery);
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+  if (error) return <p>Error :</p>;
   return (
     <div>
       <header>ApolloTest</header>
